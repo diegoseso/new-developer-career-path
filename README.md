@@ -8,6 +8,6 @@ If you still continue reading it means you want to know more and start learning 
 
 I just need this first step to make you understand that despite what movies show us developers
  are not lonely creatures, instead we love to communicate to others all the time, the thing isthat
- it might be true that we don´t do it the way everybody else does it, we like to be able to remember all the conversations we had and since we know we are not special humans we make computers do that for us, we make real efforts for making sure we save all the knowledge and information we generate and adquire no matter what it takes (and real good developers are master at it). We also love the fact that we can do our work from wherever we like /want if not look at [this picture](https://github.com/diegoseso/new-developer-career-path/while-writting.png) I took while I was writing this. 
+ it might be true that we don´t do it the way everybody else does it, we like to be able to remember all the conversations we had and since we know we are not special humans we make computers do that for us, we make real efforts for making sure we save all the knowledge and information we generate and adquire no matter what it takes (and real good developers are master at it). We also love the fact that we can do our work from wherever we like /want if not look at [this picture](https://github.com/diegoseso/new-developer-career-path/while-writting.jpg) I took while I was writing this. 
 
   
