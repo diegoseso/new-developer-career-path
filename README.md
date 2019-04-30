@@ -11,3 +11,5 @@ I just need this first step to make you understand that despite what movies show
  it might be true that we don´t do it the way everybody else does it, we like to be able to remember all the conversations we had and since we know we are not special humans we make computers do that for us, we make real efforts for making sure we save all the knowledge and information we generate and adquire no matter what it takes (and real good developers are master at it). We also love the fact that we can do our work from wherever we like /want if not look at [this picture](https://github.com/diegoseso/new-developer-career-path/while-writting.jpg) I took while I was writing this. 
 
 I will also like you to read the following [article](https://simpleprogrammer.com/software-development-career-paths/), here it is explained what are the developers career paths.
+
+Marcela estuvo aquí. 
