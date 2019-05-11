@@ -24,12 +24,12 @@ To understand how does it work, take a look at this [video](https://www.youtube.
 
 ## How use GitHub?
 
-**First step: Install git and create a GitHub account**
+**Step 1: Install git and create a GitHub account**
 
 Follow the [instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git.
 Then, create a GitHub account [here](https://github.com/).
 
-**Second step: Create a local git repository**
+**Step 2: Create a local git repository**
 
 You typically obtain a Git repository in one of two ways:
 
@@ -45,6 +45,79 @@ In either case, you end up with a Git repository on your local machine, ready fo
 | ----------- | ----------- |
 | git init | Initialize a local Git repository |
 | git clone ssh://git@github.com/[username]/[repository-name].git | Create a local copy of a remote repository |
+
+**Step 3: Add new files to the repository**
+
+| Command | Description |
+| ----------- | ----------- |
+| git status | Check status |
+| git add [file-name.txt] | Add a file to the staging area|
+| git add -a | Add a all new and change files to the staging area|
+
+
+One of the most confusing parts when you're first learning git is the concept of the staging environment and how it relates to a commit.
+
+A **commit** is a record of what files you have changed since the last time you made a commit. Essentially, you make changes to your repo (for example, adding a file or modifying one) and then tell git to put those files into a commit.
+
+Commits make up the essence of your project and allow you to go back to the state of a project at any point.
+
+To add a file to a commit, you first need to add it to the staging environment. To do this, you can use the git add [filename] command. Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command. 
+
+**Step 4: Create a commit**
+
+| Command | Description |
+| ----------- | ----------- |
+| git commit -m "commit message" | Commit changes |
+| git rm -r [file-name.txt] | Remove a file or folder|
+
+*Always use a clear message. It should be something related to what the commit contains*
+
+### A new Branch
+
+Branches allow you to move back and forth between 'states' of a project. For instance, if you want to add a new page to your website you can create a new branch just for that page without affecting the main part of the project. Once you're done with the page, you can merge your changes from your branch into the master branch. When you create a new branch, Git keeps track of which commit your branch 'branched' off of, so it knows the history behind all the files. 
+
+| Command | Description |
+| ----------- | ----------- |
+| git branch |	List branches (the asterisk denotes the current branch) |
+| git branch -a	| List all branches (local and remote) |
+| git branch [branch name]	| Create a new branch |
+| git branch -d [branch name]	| Delete a branch |
+| git push origin --delete [branch name]	| Delete a remote branch |
+| git checkout -b [branch name]	| Create a new branch and switch to it |
+| git checkout -b [branch name] origin/[branch name]	| Clone a remote branch and switch to it |
+| git checkout [branch name] |	Switch to a branch |
+| git checkout - |	Switch to the branch last checked out |
+| git checkout -- [file-name.txt]	| Discard changes to a file |
+| git merge [branch name] |	Merge a branch into the active branch |
+| git merge [source branch] [target branch] |	Merge a branch into a target branch |
+
+
+**Step 5: Push a branch**
+
+Now you'll push the commit in your branch to your new GitHub repo. This allows other people to see the changes you've made. If they're approved by the repository's owner, the changes can then be merged into the master branch.
+
+| Command | Description |
+| ----------- | ----------- |
+| git push origin [branch name] |	Push a branch to your remote repository |
+| git push -u origin [branch name] |	Push changes to remote repository (and remember the branch) |
+| git push |	Push changes to remote repository (remembered branch) |
+| git push origin --delete [branch name]	| Delete a remote branch |
+
+**Step 5: Pull Request**
+
+Pull Request (PR) is a Github feature that allows users to collaborate better together. Usually in source control software there is a main branch that describes production — in git it is the master branch. One can create a feature branch and make changes there, then issue a PR to the master branch for someone else to review, approve or reject the changes and merge to the master branch eventually. Discussing potential improvements is crucial to write and maintain a high quality repository.
+
+| Command | Description |
+| ----------- | ----------- |
+| git pull |	Update local repository to the newest commit |
+| git pull origin [branch name]	| Pull changes from remote repository |
+
+
+
+
+
+
+
 
 
 
