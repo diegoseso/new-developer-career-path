@@ -19,12 +19,35 @@ The flagship functionality of GitHub is “forking” – copying a repository f
 
 These three features – fork, pull request and merge – are what make GitHub so powerful. if you wanted to contribute to an open source project you had to manually download the project’s source code, make your changes locally, create a list of changes called a “patch” and then e-mail the patch to the project’s maintainer. The maintainer would then have to evaluate this patch, possibly sent by a total stranger, and decide whether to merge the changes.
 
-To understand how it works, take a look at this [video](https://www.youtube.com/watch?v=w3jLJU7DT5E).
+To understand how does it work, take a look at this [video](https://www.youtube.com/watch?v=w3jLJU7DT5E).
 
 
 ## How use GitHub?
 
-Commands github
+**First step: Install git and create a GitHub account**
+
+Follow the [instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git.
+Then, create a GitHub account [here](https://github.com/).
+
+**Second step: Create a local git repository**
+
+You typically obtain a Git repository in one of two ways:
+
+1. You can take a local directory that is currently not under version control, and turn it into a Git repository, or
+
+2. You can clone an existing Git repository from elsewhere.
+
+In either case, you end up with a Git repository on your local machine, ready for work.
+
+*Getting & Creating Projects*
+
+| Command | Description |
+| ----------- | ----------- |
+| git init | Initialize a local Git repository |
+| git clone ssh://git@github.com/[username]/[repository-name].git | Create a local copy of a remote repository |
+
+
+
 
 
 
