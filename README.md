@@ -103,7 +103,7 @@ Now you'll push the commit in your branch to your new GitHub repo. This allows o
 | git push |	Push changes to remote repository (remembered branch) |
 | git push origin --delete [branch name]	| Delete a remote branch |
 
-**Step 5: Pull Request**
+**Step 6: Pull Request**
 
 Pull Request (PR) is a Github feature that allows users to collaborate better together. Usually in source control software there is a main branch that describes production — in git it is the master branch. One can create a feature branch and make changes there, then issue a PR to the master branch for someone else to review, approve or reject the changes and merge to the master branch eventually. Discussing potential improvements is crucial to write and maintain a high quality repository.
 
