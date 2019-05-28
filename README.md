@@ -112,6 +112,72 @@ Pull Request (PR) is a Github feature that allows users to collaborate better to
 | git pull |	Update local repository to the newest commit |
 | git pull origin [branch name]	| Pull changes from remote repository |
 
+#Linux Commands - Tutorial
+
+How to use the Bash command line interface on Unix/Linux
+
+##Command line: 
+A command line, or terminal, is a text based interface to the system. You are able to enter commands by typing them on the keyboard and feedback will be given to you similarly as text.
+
+###Basics navigation:
+
+| Command | Meaning | Description | 
+| **pwd** | Print Working Directory | Just tells you what your current or present working directory is. | 
+| **ls** | List| To know what is there. | 
+| **cd** | Changing Directories | To move around in the system we use a command called cd which stands for change directory. | 
+| **mkdir [options] <Directory>** | Make Directory | To create a directory. | 
+| **rmdir [options] <Directory>** | Remove Directory | To remove a directory. **There is no undo!!** | 
+| **touch [options] <filename>** | Create a File | To create a new file. | 
+| **cp [options] <source> <destination>** | Copy | Copy a file or Directory. | 
+| **mv [options] <source> <destination>** | Move | Move a file or Directory. | 
+
+
+
+###MORE INFO
+
+**Paths**
+
+- **Absolute paths** specify a location (file or directory) in relation to the root directory. You can identify them easily as they always begin with a forward slash ( / )
+
+- **Relative paths** specify a location (file or directory) in relation to where we currently are in the system. They will not begin with a slash.
+
+**Shorcuts**
+
+~ (tilde) - This is a shortcut for your home directory. If your home directory is /Users/youname, then you could refer to the directory Documents with the path /Users/yourname/Documents or ~/Documents
+
+. (dot) - This is a reference to your current directory. In the example above we referred to Documents with a relative path. It could also be written as ./Documents 
+
+.. (dotdot)- This is a reference to the parent directory. You can use this several times in a path to keep going up the hierarchy. If you were in the path /Users/yourname you could run the command ls ../../ and this would do a listing of the root directory.
+
+
+**Hidden Files and Directories**
+
+Linux actually has a very simple and elegant mechanism for specifying that a file or directory is hidden. If the file or directory's name begins with a . (full stop) then it is considered to be hidden. You don't even need a special command or action to make a file hidden. Files and directories may be hidden for a variety of reasons. Configuration files for a particular user (which are normally stored in their home directory) are hidden for instance so that they don't get in the way of the user doing their everyday tasks.
+
+To make a file or directory hidden all you need to do is create the file or directory with it's name beginning with a . or rename it to be as such. Likewise you may rename a hidden file to remove the . and it will become unhidden. 
+
+
+**Manual Pages**
+
+The manual pages are a set of pages that explain every command available on your system including what they do, the specifics of how you run them and what command line arguments they accept. Some of them are a little hard to get your head around but they are fairly consistent in their structure so once you get the hang of it it's not too bad. You invoke the manual pages with the following command:
+man <command to look up>
+
+It is possible to do a keyword search on the Manual pages. To be effective with this approach, you may need a few goes. It is not uncommon to find that a particular word exists in many manual pages.
+
+man -k <search term>
+
+If you want to search within a manual page this is also possible. To do this, whilst you are in the particular manual page you would like to search press forward slash '/' followed by the term you would like to search for and hit 'enter' If the term appears multiple times you may cycle through them by pressing the 'n' button for next.
+
+
+**Shorcuts:** 
+
+1. When you enter commands, they are actually stored in a history. You can traverse this history using the up and down arrow keys. So don't bother re-typing out commands you have previously entered, you can usually just hit the up arrow a few times. You can also edit these commands using the left and right arrow keys to move the cursor where you want.
+
+2. If you run the command cd without any arguments then it will always take you back to your home directory.
+
+3. When you start typing a path (anywhere on the command line, you're not just limited to certain commands) you may hit the Tab key on your keyboard at any time which will invoke an auto complete action. If nothing happens then that means there are several possibilities. If you hit Tab again it will show you those possibilities. You may then continue typing and hit Tab again and it will again try to auto complete for you.
+
+
 
 
 
