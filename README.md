@@ -122,6 +122,7 @@ A command line, or terminal, is a text based interface to the system. You are ab
 ### Basics navigation:
 
 | Command |  Description | 
+| ----------- | ----------- |
 | **pwd** |  Just tells you what your current or present working directory is. | 
 | **ls** | To know what is there. | 
 | **cd** | To move around in the system we use a command called cd which stands for change directory. | 
