@@ -112,28 +112,28 @@ Pull Request (PR) is a Github feature that allows users to collaborate better to
 | git pull |	Update local repository to the newest commit |
 | git pull origin [branch name]	| Pull changes from remote repository |
 
-#Linux Commands - Tutorial
+# Linux Commands - Tutorial
 
 How to use the Bash command line interface on Unix/Linux
 
-##Command line: 
+## Command line: 
 A command line, or terminal, is a text based interface to the system. You are able to enter commands by typing them on the keyboard and feedback will be given to you similarly as text.
 
-###Basics navigation:
+### Basics navigation:
 
-| Command | Meaning | Description | 
-| **pwd** | Print Working Directory | Just tells you what your current or present working directory is. | 
-| **ls** | List| To know what is there. | 
-| **cd** | Changing Directories | To move around in the system we use a command called cd which stands for change directory. | 
-| **mkdir [options] <Directory>** | Make Directory | To create a directory. | 
+| Command |  Description | 
+| **pwd** |  Just tells you what your current or present working directory is. | 
+| **ls** | To know what is there. | 
+| **cd** | To move around in the system we use a command called cd which stands for change directory. | 
+| **mkdir [options] <Directory>** | To create a directory. | 
 | **rmdir [options] <Directory>** | Remove Directory | To remove a directory. **There is no undo!!** | 
-| **touch [options] <filename>** | Create a File | To create a new file. | 
-| **cp [options] <source> <destination>** | Copy | Copy a file or Directory. | 
-| **mv [options] <source> <destination>** | Move | Move a file or Directory. | 
+| **touch [options] <filename>** | To create a new file. | 
+| **cp [options] <source> <destination>** | Copy a file or Directory. | 
+| **mv [options] <source> <destination>** | Move a file or Directory. | 
 
 
 
-###MORE INFO
+### MORE INFO
 
 **Paths**
 
@@ -164,7 +164,7 @@ man <command to look up>
 
 It is possible to do a keyword search on the Manual pages. To be effective with this approach, you may need a few goes. It is not uncommon to find that a particular word exists in many manual pages.
 
-man -k <search term>
+**man -k <search term>**
 
 If you want to search within a manual page this is also possible. To do this, whilst you are in the particular manual page you would like to search press forward slash '/' followed by the term you would like to search for and hit 'enter' If the term appears multiple times you may cycle through them by pressing the 'n' button for next.
 
