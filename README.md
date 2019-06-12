@@ -178,9 +178,58 @@ If you want to search within a manual page this is also possible. To do this, wh
 
 3. When you start typing a path (anywhere on the command line, you're not just limited to certain commands) you may hit the Tab key on your keyboard at any time which will invoke an auto complete action. If nothing happens then that means there are several possibilities. If you hit Tab again it will show you those possibilities. You may then continue typing and hit Tab again and it will again try to auto complete for you.
 
+# The Developer Work
+
+A developer is the key individual behind all software applications. Generally, developers are well versed in at least one programming language and proficient in the art of structuring and developing software code for software or a program. Depending on job role and type of software developed, a developer may be classified as a software developer, application developer, mobile developer, Web developer, etc.
+
+Although the primary job role is writing code, a developer also may gather requirements for software, design or overall software architecture, software documentation and other related software development processes. It's up to the developer to consider and take care not only that their code works, but also: 
+
+**1. Readability of code:**
+Writing code that is readable is critical for any software application that needs to be maintained for any length of time.  There are valid performance and anti-theft reasons to minify or even obfuscate code that is being deployed, but the source with which the team works should be kept in as readable and well-organized a state as possible.  Code that is well written for human understanding should generally be readable by an experienced developer with little need for external documentation or code comments (except to explain why certain design decisions were made).
+
+**2. Cyclomatic complexity:**
+
+The cyclomatic complexity of a section of source code is the number of linearly independent paths within it. For instance, if the source code contained no control flow statements (conditionals or decision points), the complexity would be 1, since there would be only a single path through the code. If the code had one single-condition IF statement, there would be two paths through the code: one where the IF statement evaluates to TRUE and another one where it evaluates to FALSE, so the complexity would be 2. Two nested single-condition IFs, or one IF with two conditions, would produce a complexity of 3.
+
+Mathematically, the cyclomatic complexity of a structured program[a] is defined with reference to the control flow graph of the program, a directed graph containing the basic blocks of the program, with an edge between two basic blocks if control may pass from the first to the second. The complexity M is then defined as[2]
+
+**M = E − N + 2P,**
+where:
+
+E = the number of edges of the graph.
+N = the number of nodes of the graph.
+P = the number of connected components.
+
+Programmers should count the complexity of the modules they are developing, and split them into smaller modules whenever the cyclomatic complexity of the module exceeded 10.
 
 
+**3. Identation**
 
+Indentation is not a requirement of most programming languages, where it is used as secondary notation. Rather, indenting helps better convey the structure of a program to human readers. Especially, it is used to clarify the link between control flow constructs such as conditions or loops, and code contained within and outside of them. However, some languages use indentation to determine the structure instead of using braces or keywords; this is termed the off-side rule. In such languages, indentation is meaningful to the compiler or interpreter; it is more than only a clarity or style issue.
+
+**4. Legacy code**
+
+Legacy code is source code that relates to a no-longer supported[citation needed] or manufactured operating system or other computer technology. The term can also mean code inserted into modern software for the purpose of maintaining an older or previously supported feature – for example supporting a serial interface even though many modern systems do not have a serial port.
+
+In practice, most source code has some dependency on the platform for which it is designed – even if a programmer uses a platform-independent programming language like Java, it is hard to write a large, useful program that is totally independent of its environment. When the manufacturer upgrades a platform (or the platform is superseded), the code may no longer work without changes, and becomes legacy code. A large part of the task of a software engineer is to continually alter code to prevent this.
+
+While the term usually refers to source code, it can also apply to executable code that no longer runs on a later version of a system, or requires a compatibility layer to do so. An example would be a classic Macintosh application which will not run natively on Mac OS X, but runs inside the Classic environment, or a Win16 application running on Windows XP using the Windows on Windows feature in XP.
+
+**5. Continuous Integration:**
+
+Continuous Integration is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. 
+
+By integrating regularly, you can detect errors quickly, and locate them more easily.
+
+**6. Automated Testing:**
+
+Automated testing (AKA, test automation) is a development process that involves tools to execute predefined tests against software based on an event. These tests typically involve operations that are repetitive in both their nature and outcome.
+
+There are many different ways for developers to test the code they write. Most of the time, these tests are conducted manually. Automated testing differs by having a process, system, or service that conducts these tests in response to developers committing changes to source code. In practice, the impact on the developer's workflow is minimal since the tests are conducted in an asynchronous and autonomous fashion.
+
+The nature of automated testing for developers is clear: we're performing a predefined series of tasks (i.e. tests) against a set of preconditions and postconditions (i.e. assertions) based upon a triggering event. 
+
+The evidence for developers to use and support automated testing is clear; it has a dramatic impact on developer productivity when integrated properly into a workflow. While it's true to claim that there are costs associated with automated testing, they are amortized over the lifetime of the software project and can even save you time and money in the long-term.
 
 
 
