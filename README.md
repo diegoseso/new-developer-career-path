@@ -112,8 +112,124 @@ Pull Request (PR) is a Github feature that allows users to collaborate better to
 | git pull |	Update local repository to the newest commit |
 | git pull origin [branch name]	| Pull changes from remote repository |
 
+# Linux Commands - Tutorial
+
+How to use the Bash command line interface on Unix/Linux
+
+## Command line: 
+A command line, or terminal, is a text based interface to the system. You are able to enter commands by typing them on the keyboard and feedback will be given to you similarly as text.
+
+### Basics navigation:
+
+| Command |  Description | 
+| ----------- | ----------- |
+| **pwd** |  Just tells you what your current or present working directory is. | 
+| **ls** | To know what is there. | 
+| **cd** | To move around in the system we use a command called cd which stands for change directory. | 
+| **mkdir [options] <Directory>** | To create a directory. | 
+| **rmdir [options] <Directory>** | Remove Directory | To remove a directory. **There is no undo!!** | 
+| **touch [options] <filename>** | To create a new file. | 
+| **cp [options] <source> <destination>** | Copy a file or Directory. | 
+| **mv [options] <source> <destination>** | Move a file or Directory. | 
 
 
+
+### MORE INFO
+
+**Paths**
+
+- **Absolute paths** specify a location (file or directory) in relation to the root directory. You can identify them easily as they always begin with a forward slash ( / )
+
+- **Relative paths** specify a location (file or directory) in relation to where we currently are in the system. They will not begin with a slash.
+
+**Shorcuts**
+
+~ (tilde) - This is a shortcut for your home directory. If your home directory is /Users/youname, then you could refer to the directory Documents with the path /Users/yourname/Documents or ~/Documents
+
+. (dot) - This is a reference to your current directory. In the example above we referred to Documents with a relative path. It could also be written as ./Documents 
+
+.. (dotdot)- This is a reference to the parent directory. You can use this several times in a path to keep going up the hierarchy. If you were in the path /Users/yourname you could run the command ls ../../ and this would do a listing of the root directory.
+
+
+**Hidden Files and Directories**
+
+Linux actually has a very simple and elegant mechanism for specifying that a file or directory is hidden. If the file or directory's name begins with a . (full stop) then it is considered to be hidden. You don't even need a special command or action to make a file hidden. Files and directories may be hidden for a variety of reasons. Configuration files for a particular user (which are normally stored in their home directory) are hidden for instance so that they don't get in the way of the user doing their everyday tasks.
+
+To make a file or directory hidden all you need to do is create the file or directory with it's name beginning with a . or rename it to be as such. Likewise you may rename a hidden file to remove the . and it will become unhidden. 
+
+
+**Manual Pages**
+
+The manual pages are a set of pages that explain every command available on your system including what they do, the specifics of how you run them and what command line arguments they accept. Some of them are a little hard to get your head around but they are fairly consistent in their structure so once you get the hang of it it's not too bad. You invoke the manual pages with the following command:
+man <command to look up>
+
+It is possible to do a keyword search on the Manual pages. To be effective with this approach, you may need a few goes. It is not uncommon to find that a particular word exists in many manual pages.
+
+**man -k <search term>**
+
+If you want to search within a manual page this is also possible. To do this, whilst you are in the particular manual page you would like to search press forward slash '/' followed by the term you would like to search for and hit 'enter' If the term appears multiple times you may cycle through them by pressing the 'n' button for next.
+
+
+**Shorcuts:** 
+
+1. When you enter commands, they are actually stored in a history. You can traverse this history using the up and down arrow keys. So don't bother re-typing out commands you have previously entered, you can usually just hit the up arrow a few times. You can also edit these commands using the left and right arrow keys to move the cursor where you want.
+
+2. If you run the command cd without any arguments then it will always take you back to your home directory.
+
+3. When you start typing a path (anywhere on the command line, you're not just limited to certain commands) you may hit the Tab key on your keyboard at any time which will invoke an auto complete action. If nothing happens then that means there are several possibilities. If you hit Tab again it will show you those possibilities. You may then continue typing and hit Tab again and it will again try to auto complete for you.
+
+# The Developer Work
+
+A developer is the key individual behind all software applications. Generally, developers are well versed in at least one programming language and proficient in the art of structuring and developing software code for software or a program. Depending on job role and type of software developed, a developer may be classified as a software developer, application developer, mobile developer, Web developer, etc.
+
+Although the primary job role is writing code, a developer also may gather requirements for software, design or overall software architecture, software documentation and other related software development processes. It's up to the developer to consider and take care not only that their code works, but also: 
+
+**1. Readability of code:**
+Writing code that is readable is critical for any software application that needs to be maintained for any length of time.  There are valid performance and anti-theft reasons to minify or even obfuscate code that is being deployed, but the source with which the team works should be kept in as readable and well-organized a state as possible.  Code that is well written for human understanding should generally be readable by an experienced developer with little need for external documentation or code comments (except to explain why certain design decisions were made).
+
+**2. Cyclomatic complexity:**
+
+The cyclomatic complexity of a section of source code is the number of linearly independent paths within it. For instance, if the source code contained no control flow statements (conditionals or decision points), the complexity would be 1, since there would be only a single path through the code. If the code had one single-condition IF statement, there would be two paths through the code: one where the IF statement evaluates to TRUE and another one where it evaluates to FALSE, so the complexity would be 2. Two nested single-condition IFs, or one IF with two conditions, would produce a complexity of 3.
+
+Mathematically, the cyclomatic complexity of a structured program[a] is defined with reference to the control flow graph of the program, a directed graph containing the basic blocks of the program, with an edge between two basic blocks if control may pass from the first to the second. The complexity M is then defined as[2]
+
+**M = E − N + 2P,**
+where:
+
+E = the number of edges of the graph.
+N = the number of nodes of the graph.
+P = the number of connected components.
+
+Programmers should count the complexity of the modules they are developing, and split them into smaller modules whenever the cyclomatic complexity of the module exceeded 10.
+
+
+**3. Identation**
+
+Indentation is not a requirement of most programming languages, where it is used as secondary notation. Rather, indenting helps better convey the structure of a program to human readers. Especially, it is used to clarify the link between control flow constructs such as conditions or loops, and code contained within and outside of them. However, some languages use indentation to determine the structure instead of using braces or keywords; this is termed the off-side rule. In such languages, indentation is meaningful to the compiler or interpreter; it is more than only a clarity or style issue.
+
+**4. Legacy code**
+
+Legacy code is source code that relates to a no-longer supported[citation needed] or manufactured operating system or other computer technology. The term can also mean code inserted into modern software for the purpose of maintaining an older or previously supported feature – for example supporting a serial interface even though many modern systems do not have a serial port.
+
+In practice, most source code has some dependency on the platform for which it is designed – even if a programmer uses a platform-independent programming language like Java, it is hard to write a large, useful program that is totally independent of its environment. When the manufacturer upgrades a platform (or the platform is superseded), the code may no longer work without changes, and becomes legacy code. A large part of the task of a software engineer is to continually alter code to prevent this.
+
+While the term usually refers to source code, it can also apply to executable code that no longer runs on a later version of a system, or requires a compatibility layer to do so. An example would be a classic Macintosh application which will not run natively on Mac OS X, but runs inside the Classic environment, or a Win16 application running on Windows XP using the Windows on Windows feature in XP.
+
+**5. Continuous Integration:**
+
+Continuous Integration is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. 
+
+By integrating regularly, you can detect errors quickly, and locate them more easily.
+
+**6. Automated Testing:**
+
+Automated testing (AKA, test automation) is a development process that involves tools to execute predefined tests against software based on an event. These tests typically involve operations that are repetitive in both their nature and outcome.
+
+There are many different ways for developers to test the code they write. Most of the time, these tests are conducted manually. Automated testing differs by having a process, system, or service that conducts these tests in response to developers committing changes to source code. In practice, the impact on the developer's workflow is minimal since the tests are conducted in an asynchronous and autonomous fashion.
+
+The nature of automated testing for developers is clear: we're performing a predefined series of tasks (i.e. tests) against a set of preconditions and postconditions (i.e. assertions) based upon a triggering event. 
+
+The evidence for developers to use and support automated testing is clear; it has a dramatic impact on developer productivity when integrated properly into a workflow. While it's true to claim that there are costs associated with automated testing, they are amortized over the lifetime of the software project and can even save you time and money in the long-term.
 
 
 
