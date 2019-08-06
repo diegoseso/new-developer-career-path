@@ -20,7 +20,7 @@
 
      public $houseNumber;
 
-     public public $city;
+     public $city;
 
      
 
