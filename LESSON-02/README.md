@@ -43,7 +43,7 @@ and usages.
   
   Will show 4 on the screen
   
-  Multiplication is represented by - symbol
+  Multiplication is represented by * symbol
     
     <?php 
     $x = 10;  
@@ -68,7 +68,7 @@ and usages.
      <?php 
      $x = 10;  
      $y = 2;
-     echo $x / $y;
+     echo $x % $y;
      ?>
        
   Will show 0 on the screen	
@@ -108,7 +108,7 @@ Comparison operators are used to compare two values
       var_dump($x != $y); 
       ?>
   
-  will echo false
+  will echo true
   
   "Not identical" operator is represented by !== returns true if $x is not equal to $y, or they are not of the same type	
   
