@@ -35,7 +35,17 @@ class NovelBook extends Book{
 
 class AdventureBook extends Book{
 
+    public $ageRange;
+    
+    public function __construct($ageRange, $title, $author, $pageNumber, $sumary, $coverDescription) {
+        $this->ageRange = $ageRange;
 
+        parent::__construct($title, $author, $pageNumber, $sumary, $coverDescription);
+    }
+
+    public function getAgeRange(){
+        return $this->ageRange;
+    }
 }
 
 class BiographyBook extends Book{
@@ -50,16 +60,14 @@ class BiographyBook extends Book{
 
     private function subjectName(){
         return $this->subjectName;
-
-            private function 
-
-        
     } 
 
+    private function isAutoBiography (){
+        if ($author !== $subjectName){
+            return false;
+        }
+    }
 }
-
-
-
 
 
 
