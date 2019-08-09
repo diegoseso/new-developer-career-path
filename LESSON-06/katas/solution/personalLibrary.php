@@ -1,5 +1,8 @@
 <?php
 
+interface humorousBook{
+    public function containsHumor();
+}
 
 class Book{
     public $title;
@@ -18,7 +21,7 @@ class Book{
 
 }
 
-class NovelBook extends Book{
+class NovelBook extends Book implements humorousBook{ //first extends, than implements
 
     public $literaryCurrent;
 
@@ -31,9 +34,13 @@ class NovelBook extends Book{
     public function getLiteraryCurrent(){
         return $this->literaryCurrent;
     }
+    
+    public function containsHumor(){
+    
+    }
 }
 
-class AdventureBook extends Book{
+class AdventureBook extends Booki implements humorousBook{
 
     public $ageRange;
     
@@ -45,6 +52,10 @@ class AdventureBook extends Book{
 
     public function getAgeRange(){
         return $this->ageRange;
+    }
+    
+    public function containsHumor(){
+    
     }
 }
 
